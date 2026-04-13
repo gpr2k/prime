@@ -18,6 +18,7 @@ import {
   MapPin,
   CheckCircle2
 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 const SectionTitle = ({ children, subtitle, light = false }: { children: React.ReactNode, subtitle?: string, light?: boolean }) => (
   <div className="text-center mb-12">
@@ -478,6 +479,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
